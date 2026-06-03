@@ -4,7 +4,7 @@ dns.setServers(["8.8.8.8", "8.8.4.4"]);
 require("dotenv").config();
 const Product = require("./models/Product");
 
-// Pools of high-quality FirstCry webp CDN images grouped by category
+// Pools of high-quality KidsKart webp CDN images grouped by category
 const imagesPool = {
   "Boy Fashion": [
     "https://cdn.fcglcdn.com/brainbees/images/products/zoom/babyhug-cotton-woven-shirt-full-sleeve-mandarin-collar-blue-18-24-months-22190716zzsq.webp",
@@ -237,7 +237,7 @@ const generateProducts = () => {
 const seedDB = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI);
-    console.log("Connected to MongoDB for FirstCry 144 item seeding...");
+    console.log("Connected to MongoDB for KidsKart product seeding...");
 
     // Clear existing products
     await Product.deleteMany({});

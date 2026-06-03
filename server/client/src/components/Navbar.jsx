@@ -54,7 +54,6 @@ const Navbar = () => {
           </div>
           <div>
             <span className="me-3">Track Order</span>
-            <span className="me-3 text-warning fw-bold">FirstCry Parenting</span>
             <span className="me-3">Shortlist</span>
             <span>Club</span>
           </div>

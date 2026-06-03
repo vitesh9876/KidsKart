@@ -476,7 +476,7 @@ const Home = () => {
           <div className="d-flex align-items-center gap-2">
             <span className="fs-5 text-warning fw-bold"><i className="bi bi-gift-fill me-1"></i></span>
             <div className="small">
-              <span className="fw-bold text-dark d-block">Firstcry Happiness now delivered the "SAME DAY & NEXT DAY".</span>
+              <span className="fw-bold text-dark d-block">KidsKart Happiness now delivered the "SAME DAY & NEXT DAY".</span>
               <span className="text-secondary">Just enter your Pincode and see delivery timelines on product pages.</span>
             </div>
           </div>
