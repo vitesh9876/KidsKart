@@ -4,6 +4,8 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../redux/cartSlice";
 
+const API_URL = import.meta.env.VITE_API_URL || "https://kidskart.onrender.com";
+
 function ProductDetails() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
@@ -15,7 +17,7 @@ function ProductDetails() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/products/${id}`)
+      .get(`${API_URL}/api/products/${id}`)
       .then((res) => {
         setProduct(res.data);
         setLoading(false);
